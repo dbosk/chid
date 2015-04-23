@@ -27,6 +27,8 @@ WORKSHOPS+= eval-lit.tex
 USE_LATEXMK= 	yes
 USE_BIBLATEX= 	yes
 
+all: studyguide.pdf
+
 studyguide.pdf: ${FILES} miunart miunmisc
 
 literature.bib: ../../chid.bib
@@ -55,7 +57,7 @@ prototype-lit.tex: ../../workshops/prototype/literature.tex
 eval-lit.tex: ../../workshops/eval/literature.tex
 
 literature.bib ${LABS} ${SEM} ${PROJECT} ${LECTURES} ${WORKSHOPS}:
-	${CP} $^ $@
+	ln -s $^ $@
 
 clean:
 	${RM} literature.bib ${LABS} ${SEM} ${PROJECT} ${LECTURES} ${WORKSHOPS}

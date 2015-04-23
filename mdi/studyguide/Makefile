@@ -26,6 +26,8 @@ WORKSHOPS+= eval-lit.tex
 USE_LATEXMK= 	yes
 USE_BIBLATEX= 	yes
 
+all: studyguide.pdf
+
 studyguide.pdf: ${FILES} miunart miunmisc
 
 literature.bib: ../../chid.bib

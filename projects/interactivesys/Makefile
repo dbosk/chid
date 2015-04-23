@@ -3,6 +3,8 @@
 USE_LATEXMK= 	yes
 USE_BIBLATEX= 	yes
 
+all: interactivesys.pdf
+
 interactivesys.pdf: interactivesys.tex aims.tex literature.tex literature.bib
 interactivesys.pdf: miunasgn miunmisc
 

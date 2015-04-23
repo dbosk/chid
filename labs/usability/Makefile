@@ -3,6 +3,8 @@
 USE_LATEXMK= 	yes
 USE_BIBLATEX= 	yes
 
+all: usability.pdf
+
 usability.pdf: usability.tex literature.bib miunasgn miunmisc
 
 literature.bib: ../../chid.bib

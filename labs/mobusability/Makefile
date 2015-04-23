@@ -3,6 +3,8 @@
 USE_LATEXMK= 	yes
 USE_BIBLATEX= 	yes
 
+all: mobusability.pdf
+
 mobusability.pdf: mobusability.tex literature.bib miunasgn miunmisc
 
 literature.bib: ../../chid.bib

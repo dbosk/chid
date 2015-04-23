@@ -1,0 +1,255 @@
+\documentclass[a4paper,logo]{miunart}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+\usepackage{prettyref,varioref}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage{booktabs}
+\usepackage[today,nofancy]{svninfo}
+\usepackage[natbib,style=authoryear-comp,maxbibnames=99]{biblatex}
+\addbibresource{literature.bib}
+\usepackage[prettyref,varioref]{miunmisc}
+
+\svnInfo $Id$
+
+\title{Den kompletta studiehandledningen för kursen\\
+  DT126G Användbarhet för mobila enheter}
+\author{Daniel Bosk\footnote{%
+  Detta verk är tillgängliggjort under licensen Creative Commons 
+  Erkännande-DelaLika 2.5 Sverige (CC BY-SA 2.5 SE).
+	För att se en sammanfattning och kopia av licenstexten besök URL 
+	\url{http://creativecommons.org/licenses/by-sa/2.5/se/}.
+}}
+\date{\svnId}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+
+\section{Mål}
+
+Interaktiva mobilsystem finns överallt, liksom svårigheterna för vanliga 
+människor att hantera dem.
+Vad behöver vi veta för att människor ska lyckas att använda dessa system 
+effektivt?
+Hur kan vi förbättra sättet de utformas på?
+
+Kursen syftar till att introducera dig till ämnet interaktionsdesign med 
+inriktning mot utveckling och utvärdering av interaktiva mobila system.
+Förståelsen om människans kognitiva förmågor vid utformning av dessa system är 
+förutsättningen för att skapa användbara mobilsystem.
+
+Du ska efter avslutad kurs med godkänt resultat kunna
+\begin{itemize}
+  \input{project-aim.tex}
+%  \item definiera grundläggande begrepp inom området interaktionsdesign,
+%  \item beskriva och tillämpa användarcentrerade metoder för utveckling och 
+%    utvärdering av interaktiva system,
+%  \item analysera metoder utifrån olika teorier och modeller,
+%  \item kombinera olika metoder eller delar därutav för att nå egna uppställda 
+%    mål,
+%  \item värdera sitt val av metod och föreslå eventuella förbättringar, och
+%  \item ta hänsyn till etiska aspekter av forskningsarbete.
+\end{itemize}
+
+
+\section{Kursupplägg}
+
+För kursen används två böcker; \citetitle{Sharp2011idb} \cite{Sharp2011idb} och 
+\citetitle{Nielsen2013mu} \cite{Nielsen2013mu}.
+\citetitle{Sharp2011idb} behandlar interaktionsdesign (ID) och går lite djupare 
+än enbart människa--datorinteraktion (MDI) traditionellt gör, MDI är ett 
+delområde inom ID.
+Boken går igenom grundläggande teori och metod.
+
+\citetitle{Nielsen2013mu} fokuserar på mobilanvändbarhet.
+Den sammanfattar resultaten från många års studier av användbarhet för mobila 
+enheter.
+Denna bok innehåller således mer konkreta riktlinjer för design av 
+mobilapplikationer.
+
+Därutöver tillkommer en kort text om etik vid forskning med människor 
+publicerad av \citet{VR2002fpi} och annat literatur (se nedan).
+
+Kursens lärandemål examineras formativt genom ett antal seminarier och en 
+laboration, därefter summativt med ett avslutande projekt.
+Se lydelsen för respektive uppgift för detaljer.
+
+\subsection{Schema}
+
+Du finner en sammanställning av kursens schema i \prettyref{tbl:schema}.
+Det är naturligtvis fritt att följa detta sånär som på datum för exmination av 
+uppgifter och föreläsningarna.
+Läsanvisningar för respektive moment följer i kommande avsnitt.
+Undervisningen kräver att du följer dessa anvisningar.
+
+\begin{table}
+  \centering
+  \begin{tabular}{cp{10cm}}
+    \toprule
+    \textbf{Kursvecka} & \textbf{Moment} \\
+    \toprule
+    1   & Kursstart/Introduktionsföreläsning \\
+    \midrule
+    2
+        & Föreläsning om konceptualisering \\
+        & Föreläsning om kognition \\
+    \midrule
+    3
+        & Föreläsning om social interaktion \\
+        & Föreläsning om emotionell interaktion \\
+    \midrule
+    4
+        & Seminarium om designprinciper \\
+        & Inledande övning om metod \\
+    \midrule
+    5
+        & Seminarium om mobilanvändbarhet \\
+        & Övning om datainsamling och -analys \\
+        & Handledning \\
+    \midrule
+    6
+        & Övning om att fastställa mål \\
+    \midrule
+    7
+        & Övning om design och prototypning \\
+    \midrule
+    8
+        & Övning om utvärdering \\
+%    \midrule
+%    9
+%        & Eget arbete \\
+    \midrule
+    10
+        & Redovisning av projekt \\
+    \bottomrule
+  \end{tabular}
+  \caption{En sammanställning av kursens moment och när de kommer att 
+    genomföras.
+    Tiden är anpassad efter en studietakt om halvfart.
+  }
+  \label{tbl:schema}
+\end{table}
+
+\subsection{Introduktionsföreläsning}
+\input{intro-lit.tex}
+
+\subsection{Föreläsning om konceptualisering}
+\input{concept-lit.tex}
+
+\subsection{Föreläsning om kognition}
+\input{cognition-lit.tex}
+
+\subsection{Föreläsning om social interaktion}
+\input{social-lit.tex}
+
+\subsection{Föreläsning om emotionell interaktion}
+\input{emotional-lit.tex}
+
+\subsection{Seminarium om designprinciper}
+\input{sem-design-lit.tex}
+
+\subsection{Seminarium om mobilanvändbarhet}
+\input{sem-usability-lit.tex}
+
+\subsection{Inledande övning om metod}
+\input{method-lit.tex}
+
+\subsection{Övning om datainsamling och -analys}
+\input{data-lit.tex}
+
+\subsection{Övning om att fastställa mål}
+\input{goals-lit.tex}
+
+\subsection{Övning om design och prototypning}
+\input{prototype-lit.tex}
+
+\subsection{Övning om utvärdering}
+\input{eval-lit.tex}
+
+\subsection{Projektet}
+\input{project-lit.tex}
+
+
+\section{Examination}
+
+Kursen examineras med två seminarier och ett projekt.
+Seminariena examineras muntligen och betygsätts med \emph{pass (P)} för godkänt 
+betyg eller \emph{fail (F)} för underkänt betyg.
+Projektet betygsätts med betygen A--E för godkänt, F eller Fx för underkänt.
+För detaljer, se lydelsen för respektive uppgift.
+
+Alla inlämningar och rapporter ska vara i ''godkännbart'' skick; det vill säga, 
+vara välformulerade, grammatiskt korrekta och utan stavfel, ha korrekta 
+referenser, samt uppfylla samtliga krav i lydelsen.
+
+Betyget Fx innebär möjlighet till komplettering.
+Denna komplettering ska göras inom en vecka.
+Utebliven komplettering resulterar i F och du hänvisas till nästa tillfälle.
+
+Allt inlämnat material ska vara skapade av dig själv, eller vid gruppuppgifter, 
+skapat av dig eller någon av dina gruppmedlemmar.
+När du refererar och citerar andra verk måste korrekta källhänvisningar finnas 
+och i fallet citering måste den citerade texten måste vara tydligt markerad.
+Om plagiat finns i dokumentet riskerar du att stängas av från studier under 
+bestämd tid, högst 6 månader på grund av disciplinförseelse.
+Vid gruppuppgift riskerar alla gruppmedlemmar att hållas ansvariga
+för disciplinförseelse om det av verket inte tydligt framgår vilka av
+medlemmarna som ansvarat för de plagierade delarna.
+
+Om samarbete sker utan att detta har stöd i instruktionen för examinationen
+utgör det normalt en disciplinförseelse och studenterna riskerar att
+stängas av från studier under bestämd tid, högst sex månader.
+
+
+\section{Vad händer om jag ej blir klar i tid?}
+\label{sec:late}
+%Du måste ha genomfört introduktionsuppgiften inom dess givna slutdatum, om du 
+%inte gör detta kommer du att avregistreras från kursen och din plats kommer 
+%att ställas till förfogande för andra sökande.
+%
+För examinationen på kursen kommer det för redovisningar och seminarier att ges 
+ett tillfälle under kursens gång.
+Därefter ges ytterligare två redovisningstillfällen, dessa förläggs inom ett 
+år.
+Alla dessa tillfällen kommer att finnas i kursens schema (i studentportalen).
+
+De slutdatum som finns för dessa tillfällen är strikta.
+Om du missar slutdatumet för ett tillfälle hänvisas du till nästa 
+redovisningstillfälle.
+Efter det tredje redovisningstillfället hänvisas du till tillfällena under 
+nästkommande kursomgång.
+
+För skriftliga inlämningsuppgifter gäller att dessa rättas en gång under 
+kursens gång, senast i samband med slutdatum för inlämning, därefter 
+ytterligare två gånger i de kommande omtentamensperioderna.
+Totalt erbjuds tre försök per år.
+Därefter hänvisas du till nästa kursomgång.
+Sent inlämnade uppgifter underkänns och hänvisas till nästa tillfälle.
+Möjlighet till förlängning kan ges, det ska dock finnas en mycket god anledning 
+och förlängning ska anhållas om i god tid.
+
+Ingen handledning planeras efter kursens slut, det vill säga efter det sista 
+schemalagda handledningstillfället.
+Om du inte hinner bli klar med uppgifterna inom kursens tidsramar och du vill 
+vara garanterad handledning av lärare krävs att du omregistrerar dig på nästa 
+kurstillfälle.
+Omregistrering på kurstillfälle sker i mån om plats, alla förstagångssökande 
+och reserver kommer att prioriteras.
+
+Om du vid kursslut har majoriteten av kursens moment kvar att göra hänvisas du 
+direkt till nästa kursomgång, då krävs omregistrering.
+Huruvida din prestation är tillräcklig för att enbart komplettera eller om 
+omregistrering krävs bedöms av ansvarig lärare.
+
+Om du känner att du inte kommer att hinna bli klar med kursen är det därför 
+bättre att göra ett tidigt avbrott på kursen och söka om den inför nästa 
+kurstillfälle.
+Tidigt avbrott kan registreras senast tre veckor från kursstart och då kommer 
+du att räknas som en förstagångssökande nästa gång du söker kursen.
+
+
+\printbibliography
+\end{document}

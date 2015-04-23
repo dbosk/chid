@@ -1,0 +1,243 @@
+\documentclass[a4paper,logo]{miunart}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+\usepackage{prettyref,varioref}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage{booktabs}
+\usepackage[today,nofancy]{svninfo}
+\usepackage[natbib,style=alphabetic,maxbibnames=99]{biblatex}
+\addbibresource{literature.bib}
+\usepackage[prettyref,varioref]{miunmisc}
+
+\svnInfo $Id$
+
+\title{Den kompletta studiehandledningen för kurserna\\
+  DT157G/IG025G Människa--datorinteraktion och IU127G Interaktionsdesign}
+\author{Daniel Bosk\footnote{%
+  Detta verk är tillgängliggjort under licensen Creative Commons 
+  Erkännande-DelaLika 2.5 Sverige (CC BY-SA 2.5 SE).
+	För att se en sammanfattning och kopia av licenstexten besök URL 
+	\url{http://creativecommons.org/licenses/by-sa/2.5/se/}.
+}}
+\date{\svnId}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+
+\section{Mål}
+
+Interaktiva IT-system finns överallt liksom svårigheterna för vanliga människor 
+att hantera dem.
+Vad behöver vi veta för att människor ska lyckas att använda dessa system 
+effektivt?
+Hur kan vi förbättra sättet de utformas på?
+
+Kursen syftar till att introducera dig till ämnet människa--maskininteraktion 
+och interaktionsdesign med inriktning mot utveckling och utvärdering av 
+digitala produkter och tjänster utifrån ett användarperspektiv.
+Förståelsen om människans kognitiva förmågor vid utformning av digitala 
+produkter och tjänster är förutsättningen för att skapa användbara interaktiva 
+system.
+
+Du ska efter avslutad kurs med godkänt resultat kunna
+\begin{itemize}
+    \input{project-aim.tex}
+%  \item definiera grundläggande begrepp inom området interaktionsdesign,
+%  \item beskriva och tillämpa användarcentrerade metoder för utveckling och 
+%    utvärdering av interaktiva system,
+%  \item analysera metoder utifrån olika teorier och modeller,
+%  \item kombinera olika metoder eller delar därutav för att nå egna uppställda 
+%    mål,
+%  \item värdera sitt val av metod och föreslå eventuella förbättringar, och
+%  \item ta hänsyn till etiska aspekter av forskningsarbete.
+\end{itemize}
+
+
+\section{Kursupplägg}
+
+Boken som används som huvudlitteratur på kursen är \citetitle{Sharp2011idb} av 
+\citet{Sharp2011idb}.
+Boken behandlar interaktionsdesign (ID) och går lite djupare än enbart 
+människa--datorinteraktion (MDI) traditionellt gör, MDI är ett delområde inom 
+ID.
+Boken ska läsas i sin helhet.
+Boken \citetitle{Tullis2013mtu} av \citet{Tullis2013mtu} är ett bra komplement 
+med fokus på undersökningsmetod.
+Därutöver tillkommer en kort text om etik vid forskning med människor 
+publicerad av \citet{VR2002fpi} och annat literatur (se nedan).
+
+Kursens lärandemål examineras formativt genom ett antal seminarier och en 
+laboration, därefter summativt med ett avslutande projekt.
+Se lydelsen för respektive uppgift för detaljer.
+
+\subsection{Schema}
+
+Du finner en sammanställning av kursens schema i \prettyref{tbl:schema}.
+Det är naturligtvis fritt att följa detta sånär som på datum för exmination av 
+uppgifter och föreläsningarna.
+Läsanvisningar för respektive moment följer i kommande avsnitt.
+Undervisningen kräver att du följer dessa anvisningar.
+
+\begin{table}
+  \centering
+  \begin{tabular}{cp{10cm}}
+    \toprule
+    \textbf{Kursvecka} & \textbf{Moment} \\
+    \toprule
+    1   & Kursstart/Introduktionsföreläsning \\
+        & Föreläsning om konceptualisering \\
+    \midrule
+    2   & Föreläsning om kognition \\
+        & Föreläsning om social interaktion \\
+        & Laboration om användbarhet \\
+    \midrule
+    3   & Föreläsning om emotionell interaktion \\
+        & Inledande övning om metod \\
+        & Redovisning av laboration \\
+    \midrule
+    4   & Övning om datainsamling och -analys \\
+        & Handledning \\
+        & Övning om att fastställa mål \\
+        & Handledning \\
+        & Seminarium om designprinciper \\
+    \midrule
+    5   & Övning om design och prototypning \\
+        & Handledning \\
+        & Övning om utvärdering \\
+        & Handledning \\
+    \midrule
+    6   & Handledning \\
+        & Handledning \\
+    \midrule
+    7   & Handledning \\
+        & Handledning \\
+    \midrule
+    8   & Handledning \\
+    \midrule
+    9   & Handledning \\
+    \midrule
+    10  & Redovisning av projekt \\
+    \bottomrule
+  \end{tabular}
+  \caption{En sammanställning av kursens moment och när de kommer att 
+    genomföras.
+    Tiden är anpassad efter en studietakt om halvfart.
+  }
+  \label{tbl:schema}
+\end{table}
+
+\subsection{Introduktionsföreläsning}
+\input{intro-lit.tex}
+
+\subsection{Föreläsning om konceptualisering}
+\input{concept-lit.tex}
+
+\subsection{Föreläsning om kognition}
+\input{cognition-lit.tex}
+
+\subsection{Föreläsning om social interaktion}
+\input{social-lit.tex}
+
+\subsection{Föreläsning om emotionell interaktion}
+\input{emotional-lit.tex}
+
+\subsection{Laboration om användbarhet}
+\input{lab-usability-lit.tex}
+
+\subsection{Seminarium om designprinciper}
+\input{sem-design-lit.tex}
+
+\subsection{Inledande övning om metod}
+\input{method-lit.tex}
+
+\subsection{Övning om datainsamling och -analys}
+\input{data-lit.tex}
+
+\subsection{Övning om att fastställa mål}
+\input{goals-lit.tex}
+
+\subsection{Övning om design och prototypning}
+\input{prototype-lit.tex}
+
+\subsection{Övning om utvärdering}
+\input{eval-lit.tex}
+
+\subsection{Projektet}
+\input{project-lit.tex}
+
+
+\section{Examination}
+
+Kursen examineras med en laboration, ett seminarium och ett projekt.
+Laborationen och seminariet examineras muntligen och betygsätts med \emph{pass 
+(P)} för godkänt betyg eller \emph{fail (F)} för underkänt betyg, detta 
+motsvarar moment I101 i ladok.
+Projektet betygsätts med betygen A--E för godkänt, F eller Fx för underkänt.
+För detaljer, se lydelsen för respektive uppgift.
+Projektet motsvarar moment P101 i ladok.
+
+Alla inlämningar och rapporter ska vara i ''godkännbart'' skick; det vill säga, 
+vara välformulerade, grammatiskt korrekta och utan stavfel, ha korrekta 
+referenser, samt uppfylla samtliga krav i lydelsen.
+
+Betyget Fx innebär möjlighet till komplettering.
+I denna kurs ska komplettering göras inom en vecka från retur.
+Utebliven komplettering resulterar att du hänvisas till nästa
+rättningstillfälle.
+
+Allt inlämnat material ska vara skapade av dig själv, eller vid gruppuppgifter, 
+skapat av dig eller någon av dina gruppmedlemmar.
+När du refererar och citerar andra verk måste korrekta källhänvisningar finnas 
+och i fallet citering måste den citerade texten måste vara tydligt markerad.
+Om plagiat finns i dokumentet riskerar du att stängas av från studier under 
+bestämd tid, högst 6 månader på grund av disciplinförseelse.
+Vid gruppuppgift riskerar alla gruppmedlemmar att hållas ansvariga
+för disciplinförseelse om det av verket inte tydligt framgår vilka av
+medlemmarna som ansvarat för de plagierade delarna.
+
+Om samarbete sker utan att detta har stöd i instruktionen för examinationen
+utgör det normalt en disciplinförseelse och studenterna riskerar att 
+stängas av från studier under bestämd tid, högst sex månader.
+Om inget annat anges i lydelsen är uppgifterna individuella.
+
+
+\section{Vad händer om jag ej blir klar i tid?}
+\label{sec:late}
+Slutdatumena på denna kurs är av yttersta vikt.
+
+De slutdatum som finns för dessa tillfällen är strikta.
+Om du missar slutdatumet för ett tillfälle hänvisas du till nästa tillfälle.
+Efter det tredje tillfället hänvisas du till tillfällena under nästkommande 
+kursomgång.
+
+För skriftliga inlämningsuppgifter gäller att dessa rättas en gång under
+kursens gång, senast i samband med slutdatum för inlämning, därefter
+ytterligare två gånger inom ett år.
+Totalt erbjuds tre rättningstillfällen per år.
+Därefter hänvisas du till nästa kursomgång.
+Sent inlämnade uppgifter underkänns.
+Möjlighet till förlängning kan ges, det ska dock finnas en mycket god anledning
+och förlängning ska anhållas om i god tid.
+
+Ingen handledning planeras efter kursens slut, det vill säga efter det sista
+schemalagda handledningstillfället.
+Du rekommenderas därför starkt att följa kursens schema, tänk på att ha
+marginaler till slutdatum så att du hinner ta upp eventuellt problem vid ett
+handledningstillfälle.
+Vill du läsa om kursen kan du göra det genom att registrera om dig nästa gång
+kursen ges.
+Omregistrering på kurstillfälle sker i mån om plats, alla förstagångssökande
+och reserver kommer att prioriteras.
+
+Om du känner att du inte kommer att hinna bli klar med kursen är det därför
+bättre att göra ett tidigt avbrott på kursen och söka om den inför nästa
+kurstillfälle.
+Tidigt avbrott kan registreras senast tre veckor från kursstart och då kommer
+du att räknas som en förstagångssökande nästa gång du söker kursen.
+
+\printbibliography
+\end{document}

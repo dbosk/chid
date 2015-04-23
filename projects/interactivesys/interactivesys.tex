@@ -1,0 +1,144 @@
+\documentclass[a4paper,logo,nocourse]{miunasgn}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english,swedish]{babel}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\usepackage{prettyref,varioref}
+\usepackage[today,nofancy]{svninfo}
+\usepackage[natbib,style=alphabetic,maxbibnames=99]{biblatex}
+\addbibresource{literature.bib}
+\usepackage[varioref,prettyref]{miunmisc}
+
+\svnInfo $Id$
+%\printanswers
+
+\courseid{IG025G}
+\course{Människa-datorinteraktion}
+\assignmenttype{Projekt}
+\title{Utveckling av ett användargränssnitt}
+\author{Daniel Bosk\footnote{%
+  Detta verk är tillgängliggjort under licensen Creative Commons 
+  Erkännande-DelaLika 2.5 Sverige (CC BY-SA 2.5 SE).
+  För att se en sammanfattning och kopia av licenstexten besök URL 
+  \url{http://creativecommons.org/licenses/by-sa/2.5/se/}.
+}}
+\date{\svnId}
+
+\begin{document}
+\maketitle
+\thispagestyle{foot}
+\tableofcontents
+
+
+\section{Introduktion}
+\label{sec:Introduktion}
+Interaktionsdesign fokuserar på utvecklingen av system som ska stödja 
+användaren i dess vardagliga kommunikation och interaktion, oavsett om det är 
+kommunikation mellan människa--dator eller människa--människa via dator.
+Det resulterande systemet ska vara optimerat för användbarhet och 
+användarupplevelse.
+
+Genom åren av forskning inom området människa--datorinteraktion har det tagits 
+fram olika metoder för att underlätta utvecklingen av användargränssnitt.
+De metoder som används är användarcentrerade och fokuserar på användarens mål 
+med användningen av systemet.
+Det har tagits fram generella mål för användbarhet och användarupplevelse, 
+olika designprinciper och kunskap från andra forskningsområden, såsom kognitiv 
+psykologi, har integrerats inom området.
+
+
+\section{Syfte}
+\label{sec:Syfte}
+Syftet med detta projekt är att ni ska öva på arbetssätten inom 
+människa--datorinteraktion, och interaktionsdesign generellt.
+Det vill säga arbeta användarcentrerat från ursprungsidé till ett färdigt 
+designförslag.
+
+Därutöver ska projektet examinera att ni kan:
+\begin{itemize}
+    \input{aims.tex}
+\end{itemize}
+
+
+\section{Läsanvisningar}
+\label{sec:Lasanvisningar}
+\input{literature.tex}
+
+
+\section{Genomförande}
+\label{sec:Genomforande}
+Ni ska ta fram en design för ett interaktivt gränssnitt.
+Målgruppen får ni själva, inom designteamet, välja.
+
+Projektets arbetsgång kommer översiktligt att följa dessa steg:
+\begin{enumerate}
+	\item målanalys,
+  \item ta fram designalternativ,
+	\item utvärdera med målgruppen, och till sist
+	\item ge ett slutgiltigt förslag.
+\end{enumerate}
+Detaljerna för varje steg, eventuella mellansteg och iteratioer, lämnas till 
+litteraturen.
+Anledningen är att ni ska få välja de metoder i litteraturen som ni finner bäst 
+lämpade för just ert projekt\footnote{%
+	På så vis kommer det sannolikt att bli intressantare som lyssnare vid 
+	presentationerna om inte alla gjort exakt samma sak.
+}.
+
+
+\section{Examination}
+\label{sec:Examination}
+Projektet får genomföras i grupper om tre till fyra personer.
+Det redovisas både muntligt och skriftligt.
+
+Projektet redovisas först muntligen vid ett presentationstillfälle inför 
+helklass.
+Presentationens omfattning bör vara mellan 15 och 20 minuter.
+Samtliga gruppmedlemmar ska kunna genomföra den muntliga presentationen av 
+projektet utan övriga medlemmars hjälp, se därför till att samtliga medlemmar 
+är väl insatta i alla delar av projektet -- arbeta tillsammans, dela inte upp 
+arbetet!
+Examinator utser vid presentationstillfället vem av medlemmarna som 
+presenterar, kom därför väl förberedda.
+
+Vid presentationstillfället får ni frågor, kommentarer och inspiration från 
+övriga presentationer som kan hjälpa er till ett djupare diskussionsavsnitt för 
+rapporten.
+Projektet redovisas därefter med en skriftlig rapport enligt utformande av en 
+akademisk rapport; det vill säga med huvudavsnitten introduktion, teori, metod, 
+resultat, analys och diskussion.
+(Givetvis även korrekta referenser.)
+Observera att det i rapporten tydligt ska framgå vilka avväganden och 
+hänsynstaganden till de forskningsetiska principerna ni gjort.
+En riktlinje för rapportens omfattning är cirka 10 till 20 sidor exklusive 
+bilagor, men det är kvaliteten på innehållet och inte antalet sidor som är 
+väsentligt.
+
+Följande kriterier gäller för för betygsättning:
+\begin{description}
+  \item[E] Rapporten uppfyller samtliga krav i lydelsen (men författarna har 
+    följt ''minsta motståndets lag'').
+
+    %Exempelvis om en enkätundersökning utgör den enda datainsamlingen 
+    %kvalificerar detta inte för ett E, det utgör inte ens en iteration.
+
+  \item[D] Uppfyller samtliga tidigare, men inte hela vägen till C.
+
+  \item[C] Uppfyller samtliga tidigare betygsteg.
+    Det är ett väl genomarbetat projekt med flera användarundersökningar och 
+    användbarhetstester.
+    Teorin är väl kopplad till resultaten, d.v.s.\ resultaten förklaras 
+    i analysen med hjälp av teorin och diskuteras i diskussionen.
+
+  \item[B] Uppfyller samtliga tidigare, men inte hela vägen till A.
+
+  \item[A] Uppfyller samtliga tidigare betygsteg.
+    Det finns stark anknytning till forskningslitteratur eller annan 
+    anmärkningsvärd anledning för högsta betyg, exempelvis flertalet 
+    iterationer i processen.
+\end{description}
+
+
+\printbibliography
+\end{document}
